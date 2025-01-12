@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>E.E. Lyons Construction</title>
+  <link rel="icon" type="image/x-icon" href="favicon.png">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="CSS/default.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="JS/AIO.js"></script>
+  
+  <style>
+    /* Remove the navbar's default margin-bottom and rounded borders */
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+      background-color: #F9DC62;
+    }
+
+    /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+    /*-Angela- this block of code isn't doing anything....*/
+    .row.content {
+      height: 450px;
+    }
+
+    /* Set gray background color and 100% height */
+    .sidenav {
+      padding-top: 20px;
+      background-color: #f1f1f1;
+    /* Here is the problem */
+      height: 300%;
+    }
+
+    /* Set black background color, white text and some padding */
+    footer {
+      background-color: #555;
+      color: white;
+      padding: 15px;
+    }
+
+    /* On small screens, set height to 'auto' for sidenav and grid */
+    @media screen and (max-width: 767px) {
+      .sidenav {
+        height: auto;
+        padding: 15px;
+      }
+
+      .row.content {
+        height: auto;
+      }
+    }
+
+      @media (min-width: 768px) {
+      .well {
+          max-width: 375px; /* Adjust this width as needed */
+          margin: 0 auto;   /* Center the container on larger screens */
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+   <div id="nav-container"> </div>
+
+  
+  <div class="container-fluid text-center">
+    <div class="row content">
+      
+      <div class="col-sm-8 text-left">
+        <h1>Our Comprehensive Construction Services</h1>
+          <p style="text-indent: 25px;">
+          At E.E. Lyons Construction Company, we are your trusted partner and provide a wide range of construction services located in Vienna, Virginia. With centuries of accumulated experience from a dedicated team of experts, we offer a one-stop solution for all your construction needs. Our services include:
+          </p>
+          
+        <h2>1. Heavy Hauling Services: </h2>
+          <p style="text-indent: 25px;">
+          Whether you need to transport heavy materials or machinery, we've got you covered. Our in-house and liaisoned heavy hauling services ensure that your cargo reaches its destination safely and on time.
+          </p>
+        <hr>
+
+        <h2>2. Asphalt Paving: </h2>
+          <p style="text-indent: 25px;">
+          We take pride in providing top-quality asphalt paving solutions. Our paving professionals deliver smooth, durable, and aesthetically pleasing asphalt surfaces that stand against the test of time.
+          </p>
+        <hr>
+
+        <h2> 3. Pipelining:</h2>
+          <p style="text-indent: 25px;">
+          For all your underground utility needs, our skilled team handles precise and efficient pipelining. We ensure the proper installation of pipelines for water, sewage, and more... We also make sure that our work complies with all regulatory standards.
+          </p>
+        <hr>
+
+        <h2>4. Excavation: </h2>
+          <p style="text-indent: 25px;">
+            Our excavation services lay the foundation for countless successful projects. From site preparation to grading, we have the expertise and equipment to complete excavation tasks with precision.
+          </p>
+        <hr>
+
+        <h2>5. Project Management:</h2>
+            <p style="text-indent: 25px;">
+            Let us guide your project from conceptualization to completion. Our project management team ensure that your construction endeavors run smoothly, on time, and within budget.
+            </p>
+        <hr>
+
+        <h2> Summary:</h2>
+
+        <!-- summary -->
+        <p style="text-indent: 25px;">
+          At E.E. Lyons Construction Company, we understand that each   project is unique, each with their own set of challenges and requirements. We are committed to delivering tailored solutions that meet your specific needs, whether you're a homeowner, business owner, or a government agency.
+        </p>
+
+        <p style="text-indent: 25px;">
+        We take pride in our commitment to quality, safety, and consistency. With great attention to detail and a dedication to customer satisfaction, we have built a strong reputation for delivering results that will exceed your expectation.
+        </p>
+
+        <p style="text-indent: 25px;">
+        When you choose E.E. Lyons Construction Company, you're choosing a partner who is ready to turn your construction dreams into a reality. Contact us today to discuss your project and let us show you how we can make it happen.
+        </p>
+
+        <p style="text-indent: 25px;">
+        Our team at E.E. Lyons Construction Company is ready to bring our expertise to your construction projects. We bring over 400 years of cumulative experience in Project Management to the table, and we pride ourselves on our efficency, effectiveness, and efficacy
+        </p>
+        <br>
+        
+      </div>
+      <div class="col-sm-4 sidenav">
+        <div class="well">
+        <img src="1.jpg" class="img-responsive" style="width:100%" alt="Image">
+        <img src="2.jpg" class="img-responsive" style="width:100%" alt="Image">
+        <img src="3.jpg" class="img-responsive" style="width:100%" alt="Image">
+        <img src="4.jpg" class="img-responsive" style="width:100%" alt="Image">
+        <img src="5.jpg" class="img-responsive" style="width:100%" alt="Image">
+        <img src="6.jpg" class="img-responsive" style="width:100%" alt="Image">
+        </div>
+      </div>
+    </div>
+  </div>
+
+      <div id="footer-container">  </div>
+
+
+  <script>
+    htmlInsert("footer-container", "inclusions/footer.html");
+    navInser("nav-container", "inclusions/navbar.html");
+  </script>
+  
+</body>
+
+</html>

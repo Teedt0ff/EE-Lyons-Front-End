@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <title>E.E. Lyons Construction</title>
+  <link rel="icon" type="image/x-icon" href="favicon.png">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="CSS/default.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="JS/AIO.js"></script>
+
+  <style>
+
+    html {
+      min-height: 100vh;
+    }
+    body {
+      height: 100vh; 
+      margin: 0; 
+    }
+    
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+      background-color: #F9DC62;
+    }
+
+    footer {
+      background-color: #555;
+      padding: 25px;
+      color: white;
+    }
+
+    .carousel-inner img {
+      width: 100%;
+      height: auto;
+      display: block;
+      margin: 0 auto;
+    }
+
+    .carousel {
+      max-width: 100%;
+    }
+
+    .carousel-caption{
+      color:white+;
+    }
+
+    .item:last-child .carousel-caption a {
+      color:white;
+    }
+    
+    .item:last-child .carousel-caption a:hover {
+      color:white;
+    }
+    
+    @media (max-width: 600px) {
+      .carousel-caption {
+        display: none;
+      }
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <div id="nav-container"> </div>
+
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+      <li data-target="#myCarousel" data-slide-to="3"></li>
+      <li data-target="#myCarousel" data-slide-to="4"></li>
+    </ol>
+
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <div class="embed-responsive embed-responsive-16by9">
+          <img src="images/1.jpg" alt="Image">
+          <div class="carousel-caption">
+            <h3>Need material moved? </h3>
+            <p>We can help with that!</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="item">
+        <div class="embed-responsive embed-responsive-16by9">
+          <img src="images/14.jpg" alt="Image">
+          <div class="carousel-caption">
+            <h3>Want your systems installed with the utmost detail?</h3>
+            <p>Thats our speciality. </p>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="item">
+        <div class="embed-responsive embed-responsive-16by9">
+          <img src="images/3.jpg" alt="Image">
+          <div class="carousel-caption">
+            <h3>We do fine grading too!</h3>
+            <p> Quality work, brought to you by a family owned business. </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="item">
+        <div class="embed-responsive embed-responsive-16by9">
+          <img src="images/7.jpg" alt="Image">
+          <div class="carousel-caption">
+            <h3> In business since 1930 </h3>
+            <p> Bonded and insured, a member of the Better Business Bureau </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="item">
+        <div class="embed-responsive embed-responsive-16by9">
+          <img src="images/9.jpg" alt="Image">
+          <div class="carousel-caption">
+            <h3> Give us a call today! </h3>
+            <p> <a href="tel:(703)-759-2171">(703) 759-2171</a> </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+
+  <div class="container text-center">
+    <h3>Welcome!</h3><br>
+    <div class="row">
+      <div class="col-md-12">
+        <div class="well well-lg">
+          E.E. Lyons construction company is a Family Owned and operated construction company based out of Vienna
+          Virgina. We have been proudly serving the D.C. Metropolitan area for almost a century. We specialize in
+          Heavy
+          Hauling, Excavation, Pipe Work, Asphalt Paving, and more. We are committed to providing our customers with
+          the
+          best possible service.
+        </div>
+      </div>
+    </div>
+  </div>
+  </div><br>
+
+  <div id="footer-container"> </div>
+
+  <script>
+    htmlInsert("footer-container", "inclusions/footer.html");
+    navInser("nav-container", "inclusions/navbar.html");
+  </script>
+
+</body>
+
+</html>

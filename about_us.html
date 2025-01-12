@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>E.E. Lyons Construction </title>
+  <link rel="icon" type="image/x-icon" href="favicon.png">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="CSS/default.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="JS/AIO.js"></script>
+
+  
+  <style>
+    /* Remove the navbar's default margin-bottom and rounded borders */
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+      background-color: #F9DC62;
+    }
+
+    /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+    .row.content {
+      height: 450px;
+    }
+
+    /* Set gray background color and 100% height */
+    .sidenav {
+      padding-top: 20px;
+      background-color: #f1f1f1;
+      height: 215%;
+    }
+
+    /* Set black background color, white text and some padding */
+    footer {
+      background-color: #555;
+      color: white;
+      padding: 15px;
+    }
+
+    /* On small screens, set height to 'auto' for sidenav and grid */
+    @media screen and (max-width: 767px) {
+      .sidenav {
+        height: auto;
+        padding: 15px;
+      }
+
+      .row.content {
+        height: auto;
+      }
+    }
+
+    @media (min-width: 768px) {
+      .well {
+        max-width: 300px;
+        /* Adjust this width as needed */
+        margin: 0 auto;
+        /* Center the container on larger screens */
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div id="nav-container">  </div>
+
+  <div class="container-fluid text-center">
+    <div class="row content">
+      <div class="col-sm-8 text-left">
+        <h1>Doing it right since 1930...</h1>
+
+        <p style="text-indent: 25px;"> Since 1930, Lyons has been dedicated to delivering exceptional service and
+          quality work to our customers. Our long-standing commitment to excellence has made our customers our number
+          one priority. Over the years, we have built a reputation for reliability, professionalism, and top-notch
+          craftsmanship within the DMV (District of Columbia, Maryland, and Virginia) region. We take immense pride in
+          upholding the same high standards that have been a tradition within the Lyons family for three generations.
+        </p>
+
+        <hr>
+        <h3>Small Company Appeal</h3>
+        <p style="text-indent: 25px;"> While some companies may choose to expand rapidly and lose the personal touch,
+          Lyons has chosen a different path. We currently operate with the assistance of approximately 60 employees,
+          maintaining the ethos of a close-knit, family-oriented company. This allows us to offer a level of
+          personalized service that larger corporations often struggle to match.</p> <br>
+
+        <p style="text-indent: 25px;"> At Lyons, we believe in simplicity and efficiency. Our approach is to keep things
+          straightforward, without unnecessary complexity or bureaucracy. This streamlined approach allows us to respond
+          quickly to our customers' needs and provide a seamless experience from the beginning to the end of each
+          project. </p> <br>
+
+        <p style="text-indent: 25px;"> Our dedicated employee base is a vital asset to our company. With over 400 years
+          of combined work experience, our team is not only experienced but also deeply committed to their work. It's
+          not just about the quantity of experience; it's about the quality and dedication that our employees bring to
+          their roles. We are proud to have over 400 years of combined experience within our top 20 performers,
+          showcasing the depth of expertise we can offer to our clients. </p> <br>
+
+        <p style="text-indent: 25px;"> Our team's experience extends across various aspects of our industry, allowing us
+          to handle a wide range of projects with finesse and competence. Whether it's construction, renovation,
+          maintenance, or any other service we offer, our employees are well-equipped to deliver results that meet and
+          often exceed our clients' expectations. </p> <br>
+
+        <p style="text-indent: 25px;"> In a world where big corporations often dominate, Lyons stands out for its
+          dedication to maintaining the values and principles that have been at the core of our family business for
+          generations. We continue to strive for excellence in all that we do, and our commitment to quality,
+          simplicity, and efficiency is unwavering. For us, the customer is not just a part of our business; they are
+          the heart of it. </p> <br>
+
+      </div>
+      <div class="col-sm-4 sidenav">
+        <div class="well">
+          <img src="1.jpg" class="img-responsive" style="width:100%" alt="Image">
+          <img src="6.jpg" class="img-responsive" style="width:100%" alt="Image">
+          <img src="7.jpg" class="img-responsive" style="width:100%" alt="Image">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="footer-container">  </div>
+  
+  <script>
+    htmlInsert("footer-container", "inclusions/footer.html");
+    navInser("nav-container", "inclusions/navbar.html");
+  </script>
+  
+</body>
+
+</html>
