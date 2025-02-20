@@ -54,9 +54,15 @@
 
     @media (min-width: 768px) {
       .well {
-        max-width: 100vh;
+        max-width: 100%;
         margin: 0 auto;
         padding: 15px;
+      }
+      .well img {
+        margin-bottom: 15px;
+        max-height: calc((100vh - 200px) / 3);
+        object-fit: cover;
+        width: 100%;
       }
     }
     
