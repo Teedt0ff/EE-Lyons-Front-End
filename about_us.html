@@ -54,10 +54,26 @@
 
     @media (min-width: 768px) {
       .well {
+        width: 100%;
         max-width: 300px;
-        /* Adjust this width as needed */
         margin: 0 auto;
-        /* Center the container on larger screens */
+      }
+    }
+    
+    .sidebar-img {
+      width: 100%;
+      height: auto;
+      margin-bottom: 15px;
+      object-fit: cover;
+    }
+    
+    @media (max-width: 767px) {
+      .well {
+        width: 100%;
+        padding: 15px;
+      }
+      .sidebar-img {
+        max-width: 100%;
       }
     }
   </style>
@@ -111,9 +127,9 @@
       </div>
       <div class="col-sm-4 sidenav">
         <div class="well">
-          <img src="images/1.jpg" class="img-responsive" style="width:100%" alt="Image">
-          <img src="images/6.jpg" class="img-responsive" style="width:100%" alt="Image">
-          <img src="images/7.jpg" class="img-responsive" style="width:100%" alt="Image">
+          <img src="images/1.jpg" class="img-responsive sidebar-img" alt="Image">
+          <img src="images/6.jpg" class="img-responsive sidebar-img" alt="Image">
+          <img src="images/7.jpg" class="img-responsive sidebar-img" alt="Image">
         </div>
       </div>
     </div>
