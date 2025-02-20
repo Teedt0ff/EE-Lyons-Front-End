@@ -22,15 +22,16 @@
     /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
     /*-Angela- this block of code isn't doing anything....*/
     .row.content {
-      height: 450px;
+      height: 100%;
     }
 
     /* Set gray background color and 100% height */
     .sidenav {
-      padding-top: 20px;
+      padding: 20px;
       background-color: #f1f1f1;
       height: 100vh;
-      padding-bottom: 20px;
+     
+      
     }
 
     /* Set black background color, white text and some padding */
@@ -52,11 +53,18 @@
       }
     }
 
-      @media (min-width: 768px) {
-      .well {
-          max-width: 100%; /* Adjust this width as needed */
-          margin: 0 auto;   /* Center the container on larger screens */
-      }
+        @media (min-width: 768px) {
+          .well {
+            max-width: 100%;
+            margin: 0 auto;
+            padding: 15px;
+          }
+          .well img {
+            max-height: calc((100vh - 400px ) / 3);
+            object-fit: cover;
+            width: 100%;
+          }
+        }
     }
   </style>
 </head>
